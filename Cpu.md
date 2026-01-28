@@ -1,4 +1,4 @@
-Building an os with custom launguage dex
+huuBuilding an os with custom launguage dex
 
 learning about the cpu working and c
 
@@ -7,7 +7,7 @@ There are many layers of memory space in the cpu which have many functions
 
 The main types of memory are Stack, Heap, data, bss, text
 
-
+================================================
 1.) stack : it stores the local variables in lifo order , fast, recursion, it is temporary and stores the return address of variables 
 
 2.) Heap : it stores the the variables which space will be allocated during runtime or by user using malloc() and it stores in the memory and it should be freed with free() because it is not automated leaving it cause memory leak and os crash
@@ -18,3 +18,44 @@ The main types of memory are Stack, Heap, data, bss, text
 until the program ends eg int a,b; or static a 
 
 5.) Text : it stores the other syntax it is readable only 
+
+==============================================
+
+TYPES OF VARIABLES 
+1.) Local variables 
+2.) Global variables
+3.) Static variables 
+
+----------------------------------------------
+LOCAL VARIABLES 
+
+void f() {
+    int x = 10;
+}
+
+*) x will destroyed after the function ends
+*) Local variables can be only used inside an particular function 
+*)it leaves in data segment 
+
+----------------------------------------------
+GLOBAL VARIABLES 
+
+int g;
+
+*) g will above all the functions and can be used anywhere 
+*) G lives in BSS/Data and exsist until the entire program runs
+
+----------------------------------------------
+STATIC VARIABLES
+
+void f() {
+    static int count;
+}
+
+*) count is initialised once an it value never changes per call
+*)it lives in BSS segment 
+
+==============================================
+
+
+
