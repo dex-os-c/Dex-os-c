@@ -34,11 +34,12 @@ TYPES OF VARIABLES
 
 ----------------------------------------------
 LOCAL VARIABLES 
-'''
-void f() {
-    int x = 10;
-}
-'''
+
+
+    void f() {
+        int x = 10;
+    }
+---------------------------------
 
 *) x will destroyed after the function ends
 *) Local variables can be only used inside an particular function 
@@ -47,7 +48,7 @@ void f() {
 ----------------------------------------------
 GLOBAL VARIABLES 
 
-int g;
+    int g;
 ---------------------------------
 
 *) g will above all the functions and can be used anywhere 
@@ -56,9 +57,9 @@ int g;
 ----------------------------------------------
 STATIC VARIABLES
 
-void f() {
-    static int count;
-}
+    void f() {
+        static int count;
+    }
 -------------------------------
 
 
@@ -69,8 +70,8 @@ void f() {
 
 POINTERS(HEART OF C) 
 
-int a = 10;
-int *p = &a;
+    int a = 10;
+    int *p = &a;
 ----------------------------------
 
 *) p stores the value of address
@@ -162,9 +163,10 @@ CPU is dumb but fast.
 Everything must be explicit.
 
 --------------------------------------------
-                        note by @dex.asm
+                        by @dex.asm
 
-
+---------------------------------------
+        
 
 
 
