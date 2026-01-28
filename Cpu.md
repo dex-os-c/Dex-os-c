@@ -34,11 +34,11 @@ TYPES OF VARIABLES
 
 ----------------------------------------------
 LOCAL VARIABLES 
-
+'''
 void f() {
     int x = 10;
 }
-----------------------------------
+'''
 
 *) x will destroyed after the function ends
 *) Local variables can be only used inside an particular function 
