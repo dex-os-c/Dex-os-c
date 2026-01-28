@@ -1,4 +1,5 @@
-huuBuilding an os with custom launguage dex
+Building an os with custom launguage dex
+----------
 
 learning about the cpu working and c
 
@@ -9,24 +10,41 @@ The main types of memory are Stack, Heap, data, bss, text
 
 ========================================
 
-1.) stack : it stores the local variables in lifo order , fast, recursion, it is temporary and stores the return address of variables 
-------------
+1.) stack :
+----------
 
-2.) Heap : it stores the the variables which space will be allocated during runtime or by user using malloc() and it stores in the memory and it should be freed with free() because it is not automated leaving it cause memory leak and os crash
--------
+it stores the local variables in lifo order , fast, recursion, it is temporary and stores the return address of variables 
 
-3.) Data : it stores the initialised variables eg a = 20 its a is initialised to 20
------
 
-4.) BSS : it stores the uninitialised variables and static data variables i will not killed 
+2.) Heap : 
+-------------
+
+it stores the the variables which space will be allocated during runtime or by user using malloc() and it stores in the memory and it should be freed with free() because it is not automated leaving it cause memory leak and os crash
+
+
+3.) Data :
+-----------
+
+it stores the initialised variables eg a = 20 its a is initialised to 20
+
+
+4.) BSS : 
+----------------
+
+it stores the uninitialised variables and static data variables i will not killed 
 until the program ends eg int a,b; or static a
--------
 
-5.) Text : it stores the other syntax it is readable only 
---------
+
+5.) Text :
+----------------
+it stores the other syntax it is readable only 
+
+
 =====================================
 
 TYPES OF VARIABLES 
+-------------------
+
 
 1.) Local variables 
 2.) Global variables
@@ -34,6 +52,7 @@ TYPES OF VARIABLES
 
 ----------------------------------------------
 LOCAL VARIABLES 
+-----------------
 
 
     void f() {
@@ -47,6 +66,8 @@ LOCAL VARIABLES
 
 ----------------------------------------------
 GLOBAL VARIABLES 
+---------------------
+
 
     int g;
 ---------------------------------
@@ -55,7 +76,11 @@ GLOBAL VARIABLES
 *) G lives in BSS/Data and exsist until the entire program runs
 
 ----------------------------------------------
+
 STATIC VARIABLES
+----------------
+
+
 
     void f() {
         static int count;
@@ -69,6 +94,9 @@ STATIC VARIABLES
 =====================================
 
 POINTERS(HEART OF C) 
+-------------------
+
+
 
     int a = 10;
     int *p = &a;
@@ -80,6 +108,9 @@ POINTERS(HEART OF C)
 ---------------------------------------
 
 MAIN BUGS IN USING THE POINTERS
+-------------------------------
+
+
 
 Dangling pointer - Points to freed memory
 Memory leak - Heap memory never freed
@@ -88,6 +119,7 @@ Wild pointer - Uninitialized pointer
 ==============================
 
 STACK MECHANISM 
+-----------------
 
 *) LIFO (Last In First Out)
 *) Grows downward (high → low address)
@@ -96,6 +128,8 @@ STACK MECHANISM
 -------------------------------------
 
 FUNCTION CALL FLOW (FLOO EXAMPLE)
+---------------------------
+
 
 1.) call foo
 2.) CPU pushes return address
@@ -107,6 +141,7 @@ FUNCTION CALL FLOW (FLOO EXAMPLE)
 --------------------------------------
 
 CALL, RET & RETURN ADDRESS (CPU LOGIC)
+---------------------------------
 
 Why return address is needed
 
@@ -126,8 +161,10 @@ Important truth
 --------------------------------------------
 
 STACK OVERFLOW vs HEAP ISSUES
+------
 
 Stack Overflow
+----
 
 Caused by:
 *) Infinite recursion
@@ -142,6 +179,7 @@ Heap problems
 ---------------------------------------------
 
 WHY STACK & HEAP CAN COLLIDE
+--------
 
 Stack grows down
 Heap grows up
@@ -151,6 +189,7 @@ OS stops program for safety
 --------------------------------------------
 
 ASSEMBLY MENTAL MODEL (IMPORTANT)
+--------
 
 Think like this:
 Stack = plate stack 🍽️
