@@ -1,17 +1,17 @@
-High Address
-┌─────────────┐
-│   Stack     │  ↓ grows downward
-├─────────────┤
-│   Heap      │  ↑ grows upward
-├─────────────┤
-│   BSS       │  (uninitialized globals/statics)
-├─────────────┤
-│   Data      │  (initialized globals/statics)
-├─────────────┤
-│   Text      │  (code, read-only)
-└─────────────┘
-Low Address
-
+    High Address
+    ┌─────────────┐
+    │   Stack     │  ↓ grows downward
+    ├─────────────┤
+    │   Heap      │  ↑ grows upward
+    ├─────────────┤
+    │   BSS       │  (uninitialized  globals/statics)
+    ├─────────────┤
+    │   Data      │  (initialized globals/statics)
+    ├─────────────┤
+    │   Text      │  (code, read-only)
+    └─────────────┘
+    Low Address
+---------
 
 1.)Text :
 ----------------------
