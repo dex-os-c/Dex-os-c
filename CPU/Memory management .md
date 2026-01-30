@@ -19,33 +19,33 @@ MEMORY LAYOUT OF AN PROGRAM
 1.)Text :
 ----------------------
 
-*) Contains machine code
-*)Read-only → prevents self-modifying code
+* Contains machine code
+* Read-only → prevents self-modifying code
 
 2.)Data :
 ----
 
-*)Global / static variables with initial values
+* Global / static variables with initial values
 
 3.)BSS :
 ------
 
-*) Global / static variables without initialization
-*) Initialized to 0 automatically
+* Global / static variables without initialization
+* Initialized to 0 automatically
 
 
 4.) Heap :
 ----
-*)Dynamic memory (malloc, free)
-*)Manual control → powerful but dangerous
+* Dynamic memory (malloc, free)
+* Manual control → powerful but dangerous
 
 5.)Stack :
 ----
 
-/* Local variables
+* Local variables
 * Function calls
 * Return addresses
-*/ Fast, automatic, limited size
+* Fast, automatic, limited size
 
 
 
