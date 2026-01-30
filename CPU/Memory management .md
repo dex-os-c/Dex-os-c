@@ -42,10 +42,10 @@ MEMORY LAYOUT OF AN PROGRAM
 5.)Stack :
 ----
 
-*Local variables
-*Function calls
-*Return addresses
-*Fast, automatic, limited size
+/* Local variables
+* Function calls
+* Return addresses
+*/ Fast, automatic, limited size
 
 
 
